@@ -49,19 +49,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajouter une oeuvre</title>
+    <title>Modification d'oeuvre</title>
     <link rel="stylesheet" href="inc/bootstrap.css">
 </head>
 <body>
-    <h2>Formulaire d'ajout d'une oeuvre</h2>
-    <br>
-    <button>
-        <a href="index.php">Liste des oeuvres</a>
-    </button>
-    <br><br>
+    <h2>Formulaire de modification d'une oeuvre</h2>
     <form method="post" action="create.php">
         <fieldset>
-            <legend>Oeuvre</legend>
+            <legend>Modification d'oeuvre</legend>
+                <!-- Identifiant (Obligatoire)-->
+                <label>Identifiant <span class="requis">*</span></label>
+                <input type="text" name="s_identifiant">
+                <br>
                 <!-- Nom (Obligatoire)-->
                 <label>Nom <span class="requis">*</span></label>
                 <input type="text" name="s_nom">
